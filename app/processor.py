@@ -25,10 +25,10 @@ if not GOOGLE_API_KEY:
 # Initialize the Gemini model
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-pro", google_api_key=GOOGLE_API_KEY)
 
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+# OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
-if not OPENROUTER_API_KEY:
-    raise ValueError("OPENROUTER_API_KEY environment variable not set.")
+# if not OPENROUTER_API_KEY:
+#     raise ValueError("OPENROUTER_API_KEY environment variable not set.")
 
 # # Initialize the DeepSeek model via OpenRouter
 # llm = ChatOpenAI(
