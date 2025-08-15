@@ -150,7 +150,7 @@ analysis_agent = create_react_agent(
 Your task:
 1. Write Python code to fetch and analyze the data. Do not directly use sample rows from the CONTEXT.
 2. Use BeautifulSoup for web scraping (don't use pd.read_html)
-3. Convert data to pandas DataFrame for analysis
+3. Convert data to pandas DataFrame for analysis. Avoid using seaborn, use only matplotlib.
 4. Answer the user's specific question
 5. Use print() statements to show results
 6. Rewrite the correct code and re-execute it if errors occur

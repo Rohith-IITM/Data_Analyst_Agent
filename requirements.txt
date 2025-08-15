@@ -118,7 +118,6 @@ rsa
 s3fs
 scikit-learn
 scipy
-seaborn
 six
 sniffio
 soupsieve

@@ -11,7 +11,7 @@
         "dest": "/api/index.py"
       }
     ],
-    "installCommand": "pip install -r requirements.txt",
+    "installCommand": "pip install --no-cache-dir -r requirements.txt",
     "buildCommand": "",
     "outputDirectory": "."
   }
