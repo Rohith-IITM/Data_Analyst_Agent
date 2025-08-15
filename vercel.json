@@ -1,13 +1,18 @@
 {
-    "version": 2,
-    "functions": {
-      "api/index.py": {
-        "runtime": "python3.9",
-        "maxDuration": 300,
-        "memory": 1024
+    "builds": [
+      {
+        "src": "api/index.py",
+        "use": "@vercel/python"
       }
-    },
-    "env": {
-      "PYTHONPATH": "."
-    }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/api/index.py"
+      }
+    ],
+    "installCommand": "pip install -r requirements.txt",
+    "buildCommand": "",
+    "outputDirectory": "."
   }
+  
