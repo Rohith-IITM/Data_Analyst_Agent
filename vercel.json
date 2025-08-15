@@ -1,25 +1,13 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "app/main.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "app/main.py"
-      }
-    ],
     "functions": {
-      "app/main.py": {
+      "api/index.py": {
+        "runtime": "python3.9",
         "maxDuration": 300,
         "memory": 1024
       }
     },
     "env": {
       "PYTHONPATH": "."
-    },
-    "buildCommand": "pip install -r requirements.txt"
+    }
   }
