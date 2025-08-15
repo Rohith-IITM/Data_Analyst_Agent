@@ -1,4 +1,5 @@
 fastapi
+python-multipart
 uvicorn[standard]
 aiobotocore==2.24.0
 aiohappyeyeballs==2.6.1
